@@ -6,11 +6,13 @@
     Multi-robot Visual-Inertial-Ranging Odometry with EPDOP screening and HVCE re-weighting
   </description>
   
+  <!-- TODO: Update maintainer email before release -->
   <maintainer email="maintainer@example.com">VIRO Team</maintainer>
   <license>GPL-2.0</license>
   
   <url type="website">https://github.com/snakehaihai/multi-robot-viro</url>
   
+  <!-- TODO: Update author email before release -->
   <author email="author@example.com">VIRO Team</author>
   
   <buildtool_depend>catkin</buildtool_depend>

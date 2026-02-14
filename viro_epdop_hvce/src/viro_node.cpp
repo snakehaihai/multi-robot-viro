@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     ROS_WARN("Full implementation coming upon TIM acceptance");
     
     try {
-        viro_epdop_hvce::VIROCore viro_core(nh);
+        viro_epdop_hvce::VIROCore viro_core(nh_private);
         
         if (!viro_core.initialize()) {
             ROS_ERROR("Failed to initialize VIRO EPDOP+HVCE system");
