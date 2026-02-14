@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Multi-Robot VIRO Launch File -->
+  
+  <arg name="num_robots" default="3" />
+  <arg name="enable_epdop" default="true" />
+  <arg name="enable_hvce" default="true" />
+  
+  <!-- Robot 0 -->
+  <group ns="robot0">
+    <include file="$(find viro_epdop_hvce)/launch/viro_epdop_hvce.launch">
+      <arg name="robot_namespace" value="robot0" />
+      <arg name="num_robots" value="$(arg num_robots)" />
+      <arg name="enable_epdop" value="$(arg enable_epdop)" />
+      <arg name="enable_hvce" value="$(arg enable_hvce)" />
+    </include>
+  </group>
+  
+  <!-- Robot 1 -->
+  <group ns="robot1">
+    <include file="$(find viro_epdop_hvce)/launch/viro_epdop_hvce.launch">
+      <arg name="robot_namespace" value="robot1" />
+      <arg name="num_robots" value="$(arg num_robots)" />
+      <arg name="enable_epdop" value="$(arg enable_epdop)" />
+      <arg name="enable_hvce" value="$(arg enable_hvce)" />
+    </include>
+  </group>
+  
+  <!-- Robot 2 -->
+  <group ns="robot2">
+    <include file="$(find viro_epdop_hvce)/launch/viro_epdop_hvce.launch">
+      <arg name="robot_namespace" value="robot2" />
+      <arg name="num_robots" value="$(arg num_robots)" />
+      <arg name="enable_epdop" value="$(arg enable_epdop)" />
+      <arg name="enable_hvce" value="$(arg enable_hvce)" />
+    </include>
+  </group>
+  
+</launch>

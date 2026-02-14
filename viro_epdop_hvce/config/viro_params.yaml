@@ -1,0 +1,73 @@
+# VIRO EPDOP+HVCE Configuration Parameters
+# Multi-Robot Visual-Inertial-Ranging Odometry
+
+# ========================================
+# EPDOP Screening Parameters
+# ========================================
+epdop:
+  enabled: true
+  threshold: 10.0  # EPDOP threshold for measurement screening
+  min_satellites: 4  # Minimum number of measurements required
+  adaptive: true  # Enable adaptive threshold adjustment
+  
+# ========================================
+# HVCE Re-weighting Parameters
+# ========================================
+hvce:
+  enabled: true
+  alpha: 0.5  # HVCE weighting factor
+  beta: 2.0  # HVCE scaling factor
+  use_covariance: true  # Use full covariance matrix
+  
+# ========================================
+# Visual-Inertial Parameters
+# ========================================
+visual:
+  max_features: 200
+  min_features: 50
+  quality_threshold: 0.01
+  min_distance: 20  # pixels
+  
+imu:
+  acc_noise: 0.1
+  gyr_noise: 0.01
+  acc_bias_noise: 0.0001
+  gyr_bias_noise: 0.00001
+  gravity: 9.81
+  
+# ========================================
+# Ranging (UWB) Parameters
+# ========================================
+ranging:
+  enabled: true
+  max_range: 50.0  # meters
+  noise_std: 0.1  # meters
+  outlier_threshold: 3.0  # sigma
+  
+# ========================================
+# Multi-Robot Parameters
+# ========================================
+multi_robot:
+  num_robots: 3
+  communication_range: 100.0  # meters
+  sync_tolerance: 0.01  # seconds
+  relative_pose_init: true
+  
+# ========================================
+# Optimization Parameters
+# ========================================
+optimization:
+  max_iterations: 20
+  convergence_threshold: 1e-6
+  use_robust_kernel: true
+  robust_kernel_delta: 1.0
+  
+# ========================================
+# Output Parameters
+# ========================================
+output:
+  publish_rate: 30.0  # Hz
+  publish_path: true
+  publish_tf: true
+  frame_id: "world"
+  child_frame_id: "base_link"
