@@ -73,3 +73,6 @@ figures/
 # Documentation build
 docs/_build/
 docs/.doctrees/
+
+# CodeQL
+_codeql_*
