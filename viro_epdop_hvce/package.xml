@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>viro_epdop_hvce</name>
+  <version>0.1.0</version>
+  <description>
+    Multi-robot Visual-Inertial-Ranging Odometry with EPDOP screening and HVCE re-weighting
+  </description>
+  
+  <maintainer email="maintainer@example.com">VIRO Team</maintainer>
+  <license>GPL-2.0</license>
+  
+  <url type="website">https://github.com/snakehaihai/multi-robot-viro</url>
+  
+  <author email="author@example.com">VIRO Team</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>message_generation</build_depend>
+  
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  
+  <export>
+  </export>
+</package>

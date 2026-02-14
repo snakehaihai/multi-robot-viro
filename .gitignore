@@ -1,0 +1,75 @@
+# ROS / Catkin
+build/
+devel/
+install/
+.catkin_workspace
+*.pyc
+*.pyo
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Build artifacts
+*.o
+*.so
+*.a
+*.out
+*.exe
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# ROS generated files
+msg_gen/
+srv_gen/
+msg/*Action.msg
+msg/*ActionFeedback.msg
+msg/*ActionGoal.msg
+msg/*ActionResult.msg
+msg/*Feedback.msg
+msg/*Goal.msg
+msg/*Result.msg
+msg/_*.py
+build_isolated/
+devel_isolated/
+
+# Dataset files (not included yet)
+*.bag
+*.bag.active
+data/
+datasets/
+bags/
+
+# Results (not included yet)
+results/
+output/
+plots/
+figures/
+
+# Documentation build
+docs/_build/
+docs/.doctrees/

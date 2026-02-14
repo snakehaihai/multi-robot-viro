@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Multi-Robot VIRO: EPDOP Screening + HVCE Re-weighting -->
+  
+  <!-- Arguments -->
+  <arg name="robot_namespace" default="robot0" />
+  <arg name="num_robots" default="3" />
+  <arg name="enable_epdop" default="true" />
+  <arg name="enable_hvce" default="true" />
+  
+  <!-- Load configuration parameters -->
+  <rosparam command="load" file="$(find viro_epdop_hvce)/config/viro_params.yaml" />
+  
+  <!-- VIRO EPDOP+HVCE Node (placeholder for future implementation) -->
+  <!-- 
+  <node name="viro_epdop_hvce_node" pkg="viro_epdop_hvce" type="viro_node" output="screen">
+    <param name="robot_id" value="$(arg robot_namespace)" />
+    <param name="num_robots" value="$(arg num_robots)" />
+    <param name="enable_epdop_screening" value="$(arg enable_epdop)" />
+    <param name="enable_hvce_reweighting" value="$(arg enable_hvce)" />
+  </node>
+  -->
+  
+  <!-- Visualization (optional) -->
+  <!-- 
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find viro_epdop_hvce)/config/viro.rviz" if="$(arg enable_viz)" />
+  -->
+  
+</launch>
