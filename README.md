@@ -39,7 +39,7 @@ multi-robot-viro/
     ├── CMakeLists.txt         # Build configuration
     ├── package.xml            # Package manifest
     └── README.md              # Package documentation
-└── test_results/            # Main recorded test result
+└── test-results/            # Main recorded test result
 ```
 
 ## 🛠️ Installation
